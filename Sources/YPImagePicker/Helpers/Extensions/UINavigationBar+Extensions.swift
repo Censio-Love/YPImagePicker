@@ -16,3 +16,15 @@ extension UINavigationBar {
         self.titleTextAttributes = [NSAttributedString.Key.font: font]
     }
 }
+
+extension UIViewController {
+
+    func styleNavigationBar() {
+        navigationController?.navigationBar.titleTextAttributes = [
+            .font: YPConfig.fonts.navigationBarTitleFont,
+            .foregroundColor: YPConfig.colors.albumTitleColor
+        ]
+        navigationController?.navigationBar.barTintColor = YPConfig.colors.albumBarTintColor
+        navigationController?.navigationBar.tintColor = YPConfig.colors.albumTintColor
+    }
+}

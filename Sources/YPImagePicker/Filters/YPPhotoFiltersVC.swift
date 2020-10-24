@@ -78,6 +78,8 @@ open class YPPhotoFiltersVC: UIViewController, IsMediaFilterVC, UIGestureRecogni
         
         // Setup of Navigation Bar
         title = YPConfig.wordings.filter
+        styleNavigationBar()
+
         if isFromSelectionVC {
             navigationItem.leftBarButtonItem = UIBarButtonItem(title: YPConfig.wordings.cancel,
                                                                style: .plain,
