@@ -27,5 +27,6 @@ class YPAlbumView: UIView {
         tableView.fillContainer()
         
         backgroundColor = YPConfig.colors.albumBackgroundColor
+        tableView.backgroundColor = YPConfig.colors.albumBackgroundColor
     }
 }
