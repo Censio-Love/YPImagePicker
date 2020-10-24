@@ -79,4 +79,8 @@ public struct YPColors {
     public var navTintColor: UIColor = .ypLabel
     /// The color of the NavigationBar title color
     public var navTitleColor: UIColor = .ypLabel
+
+    // MARK: - Albums
+    public var albumBackgroundColor: UIColor = .offWhiteOrBlack
+    public var albumTextColor: UIColor = .ypLabel
 }
