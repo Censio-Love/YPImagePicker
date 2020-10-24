@@ -49,7 +49,7 @@ class YPCropVC: UIViewController {
                                            target: self,
                                            action: #selector(cancel))
         cancelButton.tintColor = .ypLabel
-        cancelButton.setFont(font: YPConfig.fonts.leftBarButtonFont, forState: .normal)
+        cancelButton.setFont(font: YPConfig.fonts.leftBarButtonFont)
         
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         
@@ -57,7 +57,7 @@ class YPCropVC: UIViewController {
                                            style: .plain,
                                            target: self,
                                            action: #selector(done))
-        saveButton.setFont(font: YPConfig.fonts.rightBarButtonFont, forState: .normal)
+        saveButton.setFont(font: YPConfig.fonts.rightBarButtonFont)
         saveButton.tintColor = .ypLabel
         v.toolbar.items = [cancelButton, flexibleSpace, saveButton]
     }

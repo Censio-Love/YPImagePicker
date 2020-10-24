@@ -11,8 +11,13 @@ import Foundation
 
 extension UIBarButtonItem {
 
-    func setFont(font: UIFont?, forState state: UIControl.State) {
-        guard font != nil else { return }
-        self.setTitleTextAttributes([NSAttributedString.Key.font: font!], for: .normal)
+    func setFont(font: UIFont?) {
+        guard let font = font else { return }
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: font
+        ]
+        setTitleTextAttributes(attributes, for: .normal)
+        setTitleTextAttributes(attributes, for: .disabled)
+        setTitleTextAttributes(attributes, for: .selected)
     }
 }
