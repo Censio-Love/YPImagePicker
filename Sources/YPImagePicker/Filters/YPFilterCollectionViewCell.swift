@@ -24,8 +24,8 @@ class YPFilterCollectionViewCell: UICollectionViewCell {
     override var isSelected: Bool {
         didSet {
             name.textColor = isSelected
-                ? UIColor.ypLabel
-                : UIColor.ypSecondaryLabel
+                ? YPConfig.colors.filterTextSelectedColor
+                : YPConfig.colors.filterTextUnselectedColor
             name.font = isSelected
 				? YPConfig.fonts.filterSelectionSelectedFont
 				: YPConfig.fonts.filterSelectionUnSelectedFont
@@ -45,7 +45,7 @@ class YPFilterCollectionViewCell: UICollectionViewCell {
         |imageView|.bottom(0).heightEqualsWidth()
         
         name.font = YPConfig.fonts.filterNameFont
-        name.textColor = UIColor.ypSecondaryLabel
+        name.textColor = YPConfig.colors.filterTextUnselectedColor
         name.textAlignment = .center
         
         imageView.contentMode = .scaleAspectFill

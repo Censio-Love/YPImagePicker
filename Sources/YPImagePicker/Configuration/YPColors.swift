@@ -38,6 +38,12 @@ public struct YPColors {
     /// A color for background in filters.
     public var filterBackgroundColor: UIColor = .offWhiteOrBlack
 
+    /// Color for the filter name when it is selected
+    public var filterTextSelectedColor: UIColor = .ypLabel
+
+    /// Color for the filter name when it is unselected
+    public var filterTextUnselectedColor: UIColor = .ypSecondaryLabel
+
     /// A color for background in selections gallery. When multiple items selected.
     public var selectionsBackgroundColor: UIColor = .offWhiteOrBlack
 
