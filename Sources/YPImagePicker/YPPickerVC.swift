@@ -233,7 +233,7 @@ open class YPPickerVC: YPBottomPager, YPBottomPagerDelegate {
             let arrow = UIImageView()
             arrow.image = YPConfig.icons.arrowDownIcon
             arrow.image = arrow.image?.withRenderingMode(.alwaysTemplate)
-            arrow.tintColor = YPConfig.colors.navTintColor
+            arrow.tintColor = YPConfig.colors.navTitleColor
             
             let attributes = UINavigationBar.appearance().titleTextAttributes
             if let attributes = attributes, let foregroundColor = attributes[.foregroundColor] as? UIColor {
