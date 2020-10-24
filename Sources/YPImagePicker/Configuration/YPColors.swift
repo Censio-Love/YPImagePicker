@@ -73,10 +73,10 @@ public struct YPColors {
 
     // MARK: - Navigation bar
 
-    /// The color of the Album's NavigationBar background
-    public var albumBarTintColor: UIColor = .ypSystemBackground
-    /// The color of the Album's left and right items color
-    public var albumTintColor: UIColor = .ypLabel
-    /// The color of the Album's title color
-    public var albumTitleColor: UIColor = .ypLabel
+    /// The color of the NavigationBar background
+    public var navBarTintColor: UIColor = .ypSystemBackground
+    /// The color of the NavigationBar left and right items color
+    public var navTintColor: UIColor = .ypLabel
+    /// The color of the NavigationBar title color
+    public var navTitleColor: UIColor = .ypLabel
 }

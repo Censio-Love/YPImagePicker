@@ -22,9 +22,9 @@ extension UIViewController {
     func styleNavigationBar() {
         navigationController?.navigationBar.titleTextAttributes = [
             .font: YPConfig.fonts.navigationBarTitleFont,
-            .foregroundColor: YPConfig.colors.albumTitleColor
+            .foregroundColor: YPConfig.colors.navTitleColor
         ]
-        navigationController?.navigationBar.barTintColor = YPConfig.colors.albumBarTintColor
-        navigationController?.navigationBar.tintColor = YPConfig.colors.albumTintColor
+        navigationController?.navigationBar.barTintColor = YPConfig.colors.navBarTintColor
+        navigationController?.navigationBar.tintColor = YPConfig.colors.navTintColor
     }
 }
